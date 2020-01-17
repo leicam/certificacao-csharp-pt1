@@ -26,9 +26,11 @@ namespace certificacao_csharp_roteiro
 
             Console.WriteLine(valorProduto1 + valorProduto2);
 
+            // a conversão de binarios faz com que a soma não seja exata. Deve-se tomar muito cuidado
             Console.WriteLine("Descobrindo se (10.1 + 10.2) == 30.299999999999997");
             Console.WriteLine((valorProduto1 + valorProduto2) == 30.299999999999997);
 
+            //Evitar a perca de precisão, sempre utilizar decimal para valores. (Salario, Materia Prima, Etc.)
             decimal materiaPrima = 10.1m;
             decimal maoDeObra = 20.2m;
             decimal custo = 30.3m;

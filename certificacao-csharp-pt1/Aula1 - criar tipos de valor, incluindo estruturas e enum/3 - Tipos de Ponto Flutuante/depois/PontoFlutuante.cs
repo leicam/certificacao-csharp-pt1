@@ -24,7 +24,7 @@ namespace certificacao_csharp_roteiro
             float numeroPI = 3.14159f; // System.Single
             Console.WriteLine($"numeroPI: {numeroPI}");
             ///
-            //float numeroMuitoMaior = 6e100f;
+            //float numeroMuitoMaior = 6e100f / não comporta todos esses digitos
             double numeroMuitoMaior = 6e100;
             ///
             Console.WriteLine();
@@ -33,7 +33,7 @@ namespace certificacao_csharp_roteiro
             int x = 3;
             short y = 5;
 
-            var resultado1 = x * y;
+            var resultado1 = x * y; //operações com tipos diferentes de dados, assumirão como tipo o que possui a maior capacidade
             Console.WriteLine("x * y = {0}", resultado1);
             Console.WriteLine($"O resultado é do tipo: {resultado1.GetType()}");
             ///
